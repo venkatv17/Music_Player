@@ -3,6 +3,9 @@ import React from 'react';
 import Player from './Components/player'
 import Song from './Components/song'
 
+//Styles
+import './Styles/App.scss'
+
 function App() {
   return (
     <div className="App">
