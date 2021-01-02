@@ -6,7 +6,7 @@ const Player = () => {
     return (
         <div className='Player'>
             <div className='Time-Control'>
-                <p>start-time</p>
+                <p>Start time</p>
                 <input type="range" />
                 <p>End time</p>
             </div>

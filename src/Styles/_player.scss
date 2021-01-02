@@ -1,16 +1,31 @@
 .Player{
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .Time-Control{
+    width: 50%;
+    margin-top: 0;
     display: flex;
+    max-height:20vh;
+    input{
+        width:100%;
+        padding: 1rem 1rem;
+    }
+    p{
+        padding: 1rem;
+    }
 }
 .Play-Control{
+    max-height: 20vh;
     display:flex;
-}
-.Play-btn,.Skip-Back-btn,.Skip-Forward-btn{
-    margin:2em;
+    justify-content: space-between;
+    align-items: center;
+    width:30%;
+    padding: 1rem;
+    svg{
+        cursor: pointer;
+    }
 }

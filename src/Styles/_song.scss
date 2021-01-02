@@ -1,6 +1,18 @@
 .Song-Container{
+    min-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    img{
+        margin-top: 2rem;
+        width: 20%;
+        border-radius: 50%;
+    }
+    h2{
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
 }
