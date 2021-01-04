@@ -6,6 +6,7 @@ const Nav = ({libraryStatus, setLibraryStatus}) => {
     return ( 
         <nav>
         <h1>CodeFlo!</h1>
+        <p>Music to go along while you code!</p>
         <button onClick={()=>setLibraryStatus(!libraryStatus)}>
             Library
             <FontAwesomeIcon icon={faMusic} />
