@@ -1,5 +1,5 @@
 .Player{
-    min-height: 50vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,17 +9,18 @@
     width: 50%;
     margin-top: 0;
     display: flex;
-    max-height:20vh;
+    font-family: 'Sans';
+    font-size: 1.2rem;
+    font-weight: 400;
     input{
         width:100%;
-        padding: 1rem 1rem;
+        padding: 1rem 0;
     }
     p{
         padding: 1rem;
     }
 }
 .Play-Control{
-    max-height: 20vh;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -27,5 +28,14 @@
     padding: 1rem;
     svg{
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Time-Control{
+        width: 90%;
+    }
+    .Play-Control{
+        width: 60%;
     }
 }

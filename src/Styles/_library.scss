@@ -1,0 +1,81 @@
+.Library{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100%;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 2px 2px 20px rgb(75, 75, 75);
+    overflow-y: scroll;
+    transform: translateX(-100%);
+    transition: all 0.8s ease;
+    opacity: 0;
+    h2{
+        padding: 2rem;
+    }
+}
+
+.Library-Track{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    img{
+        width: 40%;
+    }
+    &:hover{
+        background-color:  rgb(190, 190, 190);
+        color: black;
+        transform: scale(10% 10%);
+        transition: background-color 0.8s ease;
+        h4{
+            color:rgb(77, 77, 77);
+        }
+    }
+}
+
+.Track-Data{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    font-weight: 400;
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.75rem;
+        color:rgb(165, 165, 165);
+    }
+}
+
+*{
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.8) transparent;
+}
+*::-webkit-scrollbar{
+    width: 5px;
+}
+*::-webkit-scrollbar-track{
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    border: transparent;
+}
+
+.Selected{
+    background-color: aliceblue;
+    color: black;
+}
+
+.Library-Active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+   .Library{
+       width: 100%;
+   }
+}
