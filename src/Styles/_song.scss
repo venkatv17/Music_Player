@@ -4,8 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    p{
+        margin-bottom: 2em;
+        font-family: 'Sans';
+        font-weight: 700;
+        color:rgb(151, 151, 151);
+    }
     img{
-        width: 35%;
+        width: 30%;
         margin: 8px 10px;
         border-radius: 50%;
     }
